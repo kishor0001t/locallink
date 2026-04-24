@@ -1,9 +1,7 @@
 services:
   - type: web
     name: locallink-web
-    env: php
-    buildCommand: ""
-    startCommand: php -S 0.0.0.0:$PORT -t .
+    env: docker
     envVars:
       - key: DB_HOST
         value: locallink-digital-db.c5c8c4wkwd0m.eu-north-1.rds.amazonaws.com
